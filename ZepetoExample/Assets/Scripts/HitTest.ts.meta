@@ -1,0 +1,37 @@
+fileFormatVersion: 2
+guid: 5653010358c040d43ae33a47be3e02e2
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass HitTest extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    constructor() {\r\n        super(...arguments);\r\n        this.isOpend
+    = false;\r\n    }\r\n    Update() {\r\n        this.MouseControl();\r\n    }\r\n   
+    MouseControl() {\r\n        if (UnityEngine_1.Input.GetMouseButtonDown(0)) {\r\n           
+    let ray = UnityEngine_1.Camera.main.ScreenPointToRay(UnityEngine_1.Input.mousePosition);\r\n           
+    let ref = $ref();\r\n            if (UnityEngine_1.Physics.Raycast(ray, ref,
+    1000)) {\r\n                let hitInfo = $unref(ref);\r\n                console.log(`hitInfo.collider.name
+    : ${hitInfo.collider.name}`);\r\n                if (hitInfo.collider.name ==
+    \"Door\") {\r\n                    if (this.isOpend) {\r\n                       
+    this.transform.localEulerAngles = new UnityEngine_1.Vector3(0, 0, 0);\r\n                   
+    }\r\n                    else {\r\n                        this.transform.localEulerAngles
+    = new UnityEngine_1.Vector3(0, -70, 0);\r\n                    }\r\n                   
+    this.isOpend = !this.isOpend;\r\n                }\r\n            }\r\n       
+    }\r\n    }\r\n}\r\nexports.default = HitTest;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSGl0VGVzdC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkhpdFRlc3QudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBeUU7QUFDekUsaURBQXFEO0FBRXJELE1BQXFCLE9BQVEsU0FBUSxxQ0FBcUI7SUFBMUQ7O1FBQ1UsWUFBTyxHQUFZLEtBQUssQ0FBQTtJQTJCbEMsQ0FBQztJQXpCQyxNQUFNO1FBQ0osSUFBSSxDQUFDLFlBQVksRUFBRSxDQUFDO0lBQ3RCLENBQUM7SUFFRCxZQUFZO1FBQ1YsSUFBSSxtQkFBSyxDQUFDLGtCQUFrQixDQUFDLENBQUMsQ0FBQyxFQUFFO1lBQy9CLElBQUksR0FBRyxHQUFHLG9CQUFNLENBQUMsSUFBSSxDQUFDLGdCQUFnQixDQUFDLG1CQUFLLENBQUMsYUFBYSxDQUFDLENBQUE7WUFDM0QsSUFBSSxHQUFHLEdBQUcsSUFBSSxFQUFjLENBQUE7WUFFNUIsSUFBSSxxQkFBTyxDQUFDLE9BQU8sQ0FBQyxHQUFHLEVBQUUsR0FBRyxFQUFFLElBQUksQ0FBQyxFQUFFO2dCQUNuQyxJQUFJLE9BQU8sR0FBRyxNQUFNLENBQUMsR0FBRyxDQUFDLENBQUE7Z0JBRXpCLE9BQU8sQ0FBQyxHQUFHLENBQUMsMkJBQTJCLE9BQU8sQ0FBQyxRQUFRLENBQUMsSUFBSSxFQUFFLENBQUMsQ0FBQTtnQkFDL0QsSUFBSSxPQUFPLENBQUMsUUFBUSxDQUFDLElBQUksSUFBSSxNQUFNLEVBQ25DO29CQUNFLElBQUksSUFBSSxDQUFDLE9BQU8sRUFBRTt3QkFDaEIsSUFBSSxDQUFDLFNBQVMsQ0FBQyxnQkFBZ0IsR0FBRyxJQUFJLHFCQUFPLENBQUMsQ0FBQyxFQUFFLENBQUMsRUFBRSxDQUFDLENBQUMsQ0FBQztxQkFDeEQ7eUJBQU07d0JBQ0wsSUFBSSxDQUFDLFNBQVMsQ0FBQyxnQkFBZ0IsR0FBRyxJQUFJLHFCQUFPLENBQUMsQ0FBQyxFQUFFLENBQUMsRUFBRSxFQUFFLENBQUMsQ0FBQyxDQUFDO3FCQUMxRDtvQkFDRCxJQUFJLENBQUMsT0FBTyxHQUFHLENBQUMsSUFBSSxDQUFDLE9BQU8sQ0FBQztpQkFDOUI7YUFDRjtTQUNGO0lBQ0gsQ0FBQztDQUNGO0FBNUJELDBCQTRCQyJ9","assetPath":"Assets/Scripts/HitTest.ts","manifest":{"properties":[],"name":"HitTest","description":""},"isCompiled":true}'
+  typescriptHash: 5be564b973c9496154c4feffe62ad1a4

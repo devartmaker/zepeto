@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 7aac6114c79574f6fb4e7a616ceab8c4
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: "{\"source\":\"\\\"use strict\\\";\\r\\nObject.defineProperty(exports,
+    \\\"__esModule\\\", { value: true });\\r\\nconst UnityEngine_1 = require(\\\"UnityEngine\\\");\\r\\nconst
+    ZEPETO_Script_1 = require(\\\"ZEPETO.Script\\\");\\r\\nclass AutoRemove extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\\r\\n    Start() {\\r\\n        //10\uCD08
+    \uD6C4\uC5D0 \uC790\uB3D9\uC73C\uB85C \uC0AD\uC81C\\r\\n        this.timer =
+    setTimeout(() => this.Remove(), 10000);\\r\\n    }\\r\\n    Remove() {\\r\\n       
+    UnityEngine_1.Object.Destroy(this.gameObject);\\r\\n    }\\r\\n    OnDestroy()
+    {\\r\\n        clearTimeout(this.timer);\\r\\n    }\\r\\n}\\r\\nexports.default
+    = AutoRemove;\\r\\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXV0b1JlbW92ZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkF1dG9SZW1vdmUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBcUM7QUFDckMsaURBQXFEO0FBRXJELE1BQXFCLFVBQVcsU0FBUSxxQ0FBcUI7SUFHekQsS0FBSztRQUNELGdCQUFnQjtRQUNoQixJQUFJLENBQUMsS0FBSyxHQUFHLFVBQVUsQ0FBQyxHQUFHLEVBQUUsQ0FBQyxJQUFJLENBQUMsTUFBTSxFQUFFLEVBQUUsS0FBSyxDQUFDLENBQUM7SUFDeEQsQ0FBQztJQUVELE1BQU07UUFDRixvQkFBTSxDQUFDLE9BQU8sQ0FBQyxJQUFJLENBQUMsVUFBVSxDQUFDLENBQUM7SUFDcEMsQ0FBQztJQUVELFNBQVM7UUFDTCxZQUFZLENBQUMsSUFBSSxDQUFDLEtBQUssQ0FBQyxDQUFDO0lBQzdCLENBQUM7Q0FDSjtBQWZELDZCQWVDIn0=\",\"assetPath\":\"Assets/Scripts/AutoRemove.ts\",\"manifest\":{\"properties\":[],\"name\":\"AutoRemove\",\"description\":\"\"},\"isCompiled\":true}"
+  typescriptHash: ad1ee9a925e5746111aba0dc5d51c945

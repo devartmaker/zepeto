@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: b9a35a9e462f749e5b5babdee356fda8
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass ObjectScale extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Start() {\r\n    }\r\n    Update() {\r\n        let scale = this.transform.localScale;\r\n       
+    scale.x += 0.5 * UnityEngine_1.Time.deltaTime;\r\n        this.transform.localScale
+    = scale;\r\n    }\r\n}\r\nexports.default = ObjectScale;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiT2JqZWN0U2NhbGUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJPYmplY3RTY2FsZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUFrQztBQUNsQyxpREFBcUQ7QUFFckQsTUFBcUIsV0FBWSxTQUFRLHFDQUFxQjtJQUUxRCxLQUFLO0lBRUwsQ0FBQztJQUVELE1BQU07UUFDRixJQUFJLEtBQUssR0FBRyxJQUFJLENBQUMsU0FBUyxDQUFDLFVBQVUsQ0FBQztRQUN0QyxLQUFLLENBQUMsQ0FBQyxJQUFJLEdBQUcsR0FBRyxrQkFBSSxDQUFDLFNBQVMsQ0FBQztRQUNoQyxJQUFJLENBQUMsU0FBUyxDQUFDLFVBQVUsR0FBRyxLQUFLLENBQUM7SUFDdEMsQ0FBQztDQUNKO0FBWEQsOEJBV0MifQ==","assetPath":"Assets/ObjectScale.ts","manifest":{"properties":[],"name":"ObjectScale","description":""},"isCompiled":true}'
+  typescriptHash: 6e90cf3fa9e1b85851ebe227ce6c97ff

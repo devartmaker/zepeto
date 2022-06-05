@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 58f0a77f118554abfaa263d7faca9dae
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass ObjectMoving extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    constructor() {\r\n        super(...arguments);\r\n        this.speed
+    = 1;\r\n    }\r\n    Start() {\r\n        console.log(\"Move!\");\r\n    }\r\n   
+    Update() {\r\n        let tx = this.speed * UnityEngine_1.Time.deltaTime;\r\n       
+    let v = new UnityEngine_1.Vector3(tx, 0, 0);\r\n        this.transform.Translate(v);\r\n       
+    console.log(tx);\r\n    }\r\n}\r\nexports.default = ObjectMoving;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiT2JqZWN0TW92aW5nLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiT2JqZWN0TW92aW5nLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQTJDO0FBQzNDLGlEQUFxRDtBQUVyRCxNQUFxQixZQUFhLFNBQVEscUNBQXFCO0lBQS9EOztRQUVXLFVBQUssR0FBVSxDQUFDLENBQUM7SUFhNUIsQ0FBQztJQVhHLEtBQUs7UUFDRCxPQUFPLENBQUMsR0FBRyxDQUFDLE9BQU8sQ0FBQyxDQUFDO0lBQ3pCLENBQUM7SUFFRCxNQUFNO1FBQ0YsSUFBSSxFQUFFLEdBQUcsSUFBSSxDQUFDLEtBQUssR0FBRyxrQkFBSSxDQUFDLFNBQVMsQ0FBQztRQUNyQyxJQUFJLENBQUMsR0FBRyxJQUFJLHFCQUFPLENBQUMsRUFBRSxFQUFFLENBQUMsRUFBRSxDQUFDLENBQUMsQ0FBQztRQUM5QixJQUFJLENBQUMsU0FBUyxDQUFDLFNBQVMsQ0FBQyxDQUFDLENBQUMsQ0FBQztRQUU1QixPQUFPLENBQUMsR0FBRyxDQUFDLEVBQUUsQ0FBQyxDQUFDO0lBQ3BCLENBQUM7Q0FDSjtBQWZELCtCQWVDIn0=","assetPath":"Assets/ObjectMoving.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"speed","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"ObjectMoving","description":""},"isCompiled":true}'
+  typescriptHash: c38d6e9a9ae7626728b3729ffe2d015f

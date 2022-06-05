@@ -1,0 +1,35 @@
+fileFormatVersion: 2
+guid: fe16cca42f8706c4d9134f01bd424443
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: "{\"source\":\"\\\"use strict\\\";\\r\\nObject.defineProperty(exports,
+    \\\"__esModule\\\", { value: true });\\r\\nconst ZEPETO_Script_1 = require(\\\"ZEPETO.Script\\\");\\r\\nconst
+    ZEPETO_Character_Controller_1 = require(\\\"ZEPETO.Character.Controller\\\");\\r\\nconst
+    ZEPETO_World_1 = require(\\\"ZEPETO.World\\\");\\r\\nconst HitCheck_1 = require(\\\"./HitCheck\\\");\\r\\nclass
+    SingleCharacterController extends ZEPETO_Script_1.ZepetoScriptBehaviour {\\r\\n   
+    Start() {\\r\\n        // (Editor\uB97C \uD1B5\uD574 \uB85C\uADF8\uC778\uD55C)UserId\uB97C
+    \uAC00\uC838\uC635\uB2C8\uB2E4.  \\r\\n        $extension(\\\"ZEPETO.Character.Controller.ZepetoPlayersExtension\\\").CreatePlayerWithUserId(ZEPETO_Character_Controller_1.ZepetoPlayers.instance,
+    ZEPETO_World_1.WorldService.userId, new ZEPETO_Character_Controller_1.SpawnInfo(),
+    true);\\r\\n        ZEPETO_Character_Controller_1.ZepetoPlayers.instance.OnAddedLocalPlayer.AddListener(()
+    => {\\r\\n            let _player = ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer;\\r\\n           
+    // \uCDA9\uB3CC\uCCB4\uD06C \uCF64\uD3EC\uB10C\uD2B8 \uCD94\uAC00\\r\\n           
+    _player.zepetoPlayer.character.gameObject.AddComponent($typeof(HitCheck_1.default));\\r\\n       
+    });\\r\\n    }\\r\\n}\\r\\nexports.default = SingleCharacterController;\\r\\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2luZ2xlQ2hhcmFjdGVyQ29udHJvbGxlci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlNpbmdsZUNoYXJhY3RlckNvbnRyb2xsZXIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFDckQsNkVBQW1GO0FBQ25GLCtDQUE0QztBQUM1Qyx5Q0FBa0M7QUFFbEMsTUFBcUIseUJBQTBCLFNBQVEscUNBQXFCO0lBQ3hFLEtBQUs7UUFDRCxvQ0FBb0M7UUFDcEMsaUVBQXVCLHNCQUFzQixDQUE3QywyQ0FBYSxDQUFDLFFBQVEsRUFBd0IsMkJBQVksQ0FBQyxNQUFNLEVBQUUsSUFBSSx1Q0FBUyxFQUFFLEVBQUUsSUFBSSxFQUFFO1FBQzFGLDJDQUFhLENBQUMsUUFBUSxDQUFDLGtCQUFrQixDQUFDLFdBQVcsQ0FBQyxHQUFHLEVBQUU7WUFDdkQsSUFBSSxPQUFPLEdBQWlCLDJDQUFhLENBQUMsUUFBUSxDQUFDLFdBQVcsQ0FBQztZQUUvRCxlQUFlO1lBQ2YsT0FBTyxDQUFDLFlBQVksQ0FBQyxTQUFTLENBQUMsVUFBVSxDQUFDLFlBQVksU0FBQyxrQkFBUSxHQUFJO1FBQ3ZFLENBQUMsQ0FBQyxDQUFDO0lBQ1AsQ0FBQztDQUNKO0FBWEQsNENBV0MifQ==\",\"assetPath\":\"Assets/Scripts/SingleCharacterController.ts\",\"manifest\":{\"properties\":[],\"name\":\"SingleCharacterController\",\"description\":\"\"},\"isCompiled\":true}"
+  typescriptHash: 8cbd6b8c4c665867099f6bb14b8135e8

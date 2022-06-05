@@ -1,0 +1,35 @@
+fileFormatVersion: 2
+guid: b33ef71b8f717a5489fda93ca350058b
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\r\nclass TriggerEvent extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    constructor() {\r\n        super(...arguments);\r\n        this.t =
+    0;\r\n    }\r\n    // Start() {    \r\n    //     this.StartCoroutine(this.MoveUpDown());\r\n   
+    // }\r\n    // *MoveUpDown() {\r\n    //     while (true) {\r\n    //        
+    this.t += 0.03;\r\n    //         let v = new Vector3(0, Math.sin(this.t) * 0.03,
+    0);\r\n    //         this.transform.Translate(v);\r\n    //         yield new
+    WaitForSeconds(0.01)\r\n    //     }\r\n    // }\r\n    Update() {\r\n       
+    this.t += 2 * UnityEngine_1.Time.deltaTime;\r\n        let pos = new UnityEngine_1.Vector3(0,
+    0.5 + UnityEngine_1.Mathf.Abs(UnityEngine_1.Mathf.Sin(this.t) * 2), 0);\r\n       
+    this.transform.localPosition = pos;\r\n    }\r\n    OnTriggerEnter(obj) {\r\n       
+    console.log(obj.name);\r\n    }\r\n}\r\nexports.default = TriggerEvent;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVHJpZ2dlckV2ZW50LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiVHJpZ2dlckV2ZW50LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsaURBQXFEO0FBQ3JELDZDQUE2RTtBQUU3RSxNQUFxQixZQUFhLFNBQVEscUNBQXFCO0lBQS9EOztRQUVZLE1BQUMsR0FBVyxDQUFDLENBQUM7SUF3QjFCLENBQUM7SUF0QkcsZ0JBQWdCO0lBQ2hCLDhDQUE4QztJQUM5QyxJQUFJO0lBRUosa0JBQWtCO0lBQ2xCLHFCQUFxQjtJQUNyQiwwQkFBMEI7SUFDMUIsOERBQThEO0lBQzlELHVDQUF1QztJQUN2Qyx5Q0FBeUM7SUFDekMsUUFBUTtJQUNSLElBQUk7SUFFSixNQUFNO1FBQ0YsSUFBSSxDQUFDLENBQUMsSUFBSSxDQUFDLEdBQUcsa0JBQUksQ0FBQyxTQUFTLENBQUM7UUFDN0IsSUFBSSxHQUFHLEdBQUcsSUFBSSxxQkFBTyxDQUFDLENBQUMsRUFBRSxHQUFHLEdBQUcsbUJBQUssQ0FBQyxHQUFHLENBQUMsbUJBQUssQ0FBQyxHQUFHLENBQUMsSUFBSSxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FBQyxFQUFFLENBQUMsQ0FBQyxDQUFDO1FBQ3BFLElBQUksQ0FBQyxTQUFTLENBQUMsYUFBYSxHQUFHLEdBQUcsQ0FBQztJQUN2QyxDQUFDO0lBRUQsY0FBYyxDQUFDLEdBQWE7UUFDeEIsT0FBTyxDQUFDLEdBQUcsQ0FBQyxHQUFHLENBQUMsSUFBSSxDQUFDLENBQUM7SUFDMUIsQ0FBQztDQUNKO0FBMUJELCtCQTBCQyJ9","assetPath":"Assets/Scripts/TriggerEvent.ts","manifest":{"properties":[],"name":"TriggerEvent","description":""},"isCompiled":true}'
+  typescriptHash: 21e58bef751670f87e8d1b363d93ccaa

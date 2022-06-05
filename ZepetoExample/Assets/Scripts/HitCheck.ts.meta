@@ -1,0 +1,35 @@
+fileFormatVersion: 2
+guid: 58b7526e17e1b4850bb6455dacd8da6f
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: "{\"source\":\"\\\"use strict\\\";\\r\\nObject.defineProperty(exports,
+    \\\"__esModule\\\", { value: true });\\r\\nconst UnityEngine_1 = require(\\\"UnityEngine\\\");\\r\\nconst
+    ZEPETO_Script_1 = require(\\\"ZEPETO.Script\\\");\\r\\nclass HitCheck extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\\r\\n    Awake() {\\r\\n        // \uCDA9\uB3CC\uAC10\uC9C0\uC6A9
+    \\r\\n        let chacterController = this.gameObject.GetComponent($typeof(UnityEngine_1.CharacterController));\\r\\n       
+    let col = this.gameObject.AddComponent($typeof(UnityEngine_1.CapsuleCollider));\\r\\n       
+    col.radius = chacterController.radius + 0.05;\\r\\n        col.height = chacterController.height
+    + 0.1;\\r\\n        col.center = chacterController.center;\\r\\n        col.isTrigger
+    = true;\\r\\n    }\\r\\n    OnTriggerEnter(obj) {\\r\\n        // \uBC29\uAE08
+    \uB2FF\uC740 \uC624\uBE0C\uD14D\uD2B8\uC758 \uD0DC\uADF8\uAC00 \uD050\uBE0C\uC778\uC9C0
+    \uD655\uC778\\r\\n        if (obj.gameObject.CompareTag(\\\"Cube\\\")) {\\r\\n           
+    console.log(`\uCDA9\uB3CC \uAC1D\uCCB4 name=${obj.gameObject.name}, tag=${obj.gameObject.tag}`);\\r\\n           
+    // \uD050\uBE0C \uCDA9\uB3CC\uC2DC \uC0AD\uC81C\\r\\n            UnityEngine_1.GameObject.Destroy(obj.gameObject);\\r\\n       
+    }\\r\\n    }\\r\\n}\\r\\nexports.default = HitCheck;\\r\\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSGl0Q2hlY2suanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJIaXRDaGVjay50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUF5RjtBQUN6RixpREFBcUQ7QUFFckQsTUFBcUIsUUFBUyxTQUFRLHFDQUFxQjtJQUN2RCxLQUFLO1FBQ0QsU0FBUztRQUNULElBQUksaUJBQWlCLEdBQXdCLElBQUksQ0FBQyxVQUFVLENBQUMsWUFBWSxTQUFDLGlDQUFtQixFQUFHLENBQUM7UUFDakcsSUFBSSxHQUFHLEdBQW9CLElBQUksQ0FBQyxVQUFVLENBQUMsWUFBWSxTQUFDLDZCQUFlLEVBQUcsQ0FBQztRQUMzRSxHQUFHLENBQUMsTUFBTSxHQUFHLGlCQUFpQixDQUFDLE1BQU0sR0FBRyxJQUFJLENBQUM7UUFDN0MsR0FBRyxDQUFDLE1BQU0sR0FBRyxpQkFBaUIsQ0FBQyxNQUFNLEdBQUcsR0FBRyxDQUFDO1FBQzVDLEdBQUcsQ0FBQyxNQUFNLEdBQUcsaUJBQWlCLENBQUMsTUFBTSxDQUFDO1FBQ3RDLEdBQUcsQ0FBQyxTQUFTLEdBQUcsSUFBSSxDQUFDO0lBQ3pCLENBQUM7SUFFRCxjQUFjLENBQUMsR0FBYTtRQUN4QiwwQkFBMEI7UUFDMUIsSUFBSSxHQUFHLENBQUMsVUFBVSxDQUFDLFVBQVUsQ0FBQyxNQUFNLENBQUMsRUFDckM7WUFDSSxPQUFPLENBQUMsR0FBRyxDQUFDLGNBQWMsR0FBRyxDQUFDLFVBQVUsQ0FBQyxJQUFJLFNBQVMsR0FBRyxDQUFDLFVBQVUsQ0FBQyxHQUFHLEVBQUUsQ0FBQyxDQUFDO1lBRTVFLFlBQVk7WUFDWix3QkFBVSxDQUFDLE9BQU8sQ0FBQyxHQUFHLENBQUMsVUFBVSxDQUFDLENBQUM7U0FDdEM7SUFDTCxDQUFDO0NBQ0o7QUFyQkQsMkJBcUJDIn0=\",\"assetPath\":\"Assets/Scripts/HitCheck.ts\",\"manifest\":{\"properties\":[],\"name\":\"HitCheck\",\"description\":\"\"},\"isCompiled\":true}"
+  typescriptHash: 66bcf32025f9e75ff939d13a3ec5486d

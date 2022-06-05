@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: ad6a312b461424d24be25cb7a8124b21
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass TargetMoving extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    constructor() {\r\n        super(...arguments);\r\n        this.speed
+    = 1;\r\n    }\r\n    Start() {\r\n    }\r\n    Update() {\r\n        let pos
+    = UnityEngine_1.Vector3.MoveTowards(this.transform.position, this.target.position,
+    this.speed * UnityEngine_1.Time.deltaTime);\r\n        this.transform.position
+    = pos;\r\n    }\r\n}\r\nexports.default = TargetMoving;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGFyZ2V0TW92aW5nLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiVGFyZ2V0TW92aW5nLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQXVEO0FBQ3ZELGlEQUFxRDtBQUVyRCxNQUFxQixZQUFhLFNBQVEscUNBQXFCO0lBQS9EOztRQUdXLFVBQUssR0FBVSxDQUFDLENBQUM7SUFVNUIsQ0FBQztJQVJHLEtBQUs7SUFFTCxDQUFDO0lBRUQsTUFBTTtRQUNGLElBQUksR0FBRyxHQUFhLHFCQUFPLENBQUMsV0FBVyxDQUFDLElBQUksQ0FBQyxTQUFTLENBQUMsUUFBUSxFQUFFLElBQUksQ0FBQyxNQUFNLENBQUMsUUFBUSxFQUFFLElBQUksQ0FBQyxLQUFLLEdBQUcsa0JBQUksQ0FBQyxTQUFTLENBQUMsQ0FBQztRQUNwSCxJQUFJLENBQUMsU0FBUyxDQUFDLFFBQVEsR0FBRyxHQUFHLENBQUM7SUFDbEMsQ0FBQztDQUNKO0FBYkQsK0JBYUMifQ==","assetPath":"Assets/Scripts/TargetMoving.ts","manifest":{"properties":[{"assembly":"UnityEngine.CoreModule","name":"target","type":"UnityEngine.Transform","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"speed","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"TargetMoving","description":""},"isCompiled":true}'
+  typescriptHash: 543095b8e787771bb3db73b5d24eb89b
